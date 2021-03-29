@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "clipboard sync server",
   "main": "index.js",
+  "engines": {
+    "node": "14.x"
+  },
   "scripts": {
     "start server": "node index",
     "start client": "py app.py"
