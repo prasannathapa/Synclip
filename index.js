@@ -13,7 +13,7 @@ const httpserver = http.createServer((req, res) => {
 const websocket = new WebSocketServer({
     "httpServer": httpserver
 })
-httpserver.listen(8080, () => console.log("My server is listening on port 8080"))
+httpserver.listen(process.env.PORT || 5000, () => console.log("My server is listening on port "+(process.env.PORT || 5000)))
 
 
 websocket.on("request", request => {
