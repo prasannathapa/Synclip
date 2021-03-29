@@ -1,0 +1,17 @@
+{
+  "name": "synclip",
+  "version": "1.0.0",
+  "description": "clipboard sync server",
+  "main": "index.js",
+  "scripts": {
+    "start server": "node index",
+    "start client": "py app.py"
+  },
+  "author": "prasanna thapa",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^4.0.0",
+    "websocket": "^1.0.33"
+  }
+}
