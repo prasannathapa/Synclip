@@ -39,7 +39,7 @@ module.exports =  class Client{
                              " Copied:\n------------------------------\n"
                              +Buffer.from(jsonObj.data, 'base64').toString()
                              +"\n------------------------------\n")
-        if(this.Connlist.size() > 1)
+        if(this.Connlist.size > 1)
             process.stdout.write("sharing data with")
         else
             console.log("But, no decive is connected to recieve data")
