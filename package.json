@@ -7,9 +7,11 @@
     "node": "14.x"
   },
   "scripts": {
-    "start server": "node index",
+    "heroku-prebuild": "npm install websocket",
+    "start": "node index.js",
     "start client": "py app.py"
   },
+
   "author": "prasanna thapa",
   "license": "ISC",
   "dependencies": {
